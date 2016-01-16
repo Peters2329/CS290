@@ -1,0 +1,39 @@
+table {
+  border-style: solid;
+}
+
+th,
+td {
+  border-style: solid;
+}
+
+tbody th {
+  font-weight: normal;
+  font-style: italic;
+}
+
+tbody tr:nth-of-type(odd) {
+  background: lightgreen;
+}
+
+tbody tr:nth-of-type(even) {
+  background: lightblue;
+}
+
+.outer-content {
+  background-color: pink;
+  width: 75%;
+  height: 40px;
+  position: relative;
+  top: 20px;
+}
+
+.inner-content {
+  background-color: blue;
+  width: 75%;
+  heiht: 20px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
