@@ -1,0 +1,19 @@
+<h1>POST Request Received</h1>
+{{#if dataList2}}
+<h2>NAMES and VALUES which were sent in the URL query string:</h2>
+<ul>
+  {{#each dataList2}}
+    <li>{{this.name}} <b>:</b> {{this.value}}
+  {{/each}}
+</ul>
+
+{{else}}
+    <p>No req.body submitted</p>
+{{/if}}
+
+<h2>NAMES and VALUES received in the request body</h2>
+<ul>
+  {{#each dataList}}
+    <li>{{this.name}} <b>:</b> {{this.value}}
+  {{/each}}
+</ul>
