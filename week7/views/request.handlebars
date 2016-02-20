@@ -1,3 +1,4 @@
+{{#if dataList}}
 <h1>GET Request Received</h1>
 <h2>NAMES and VALUES which were sent in the URL query string:</h2>
 
@@ -7,3 +8,7 @@
     <li>{{this.name}} <b>:</b> {{this.value}}
   {{/each}}
 </ul>
+
+{{else}}
+    <h1>Pokémon battle until a request is made...</h1>
+{{/if}}
